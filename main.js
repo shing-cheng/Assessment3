@@ -165,7 +165,7 @@ function setVol(event) {
     volBar.style.width = `${percent}%`;
 }
 
-// start the player
+// start the player with initial trackNum
 updateTrack(trackNum);
 
 // event listeners 
