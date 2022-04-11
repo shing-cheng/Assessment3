@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nowPlaying {
+    text-align: center;
+}
+
+.nowPlayingItem {
+    margin: 10px 0px;
+}
+
+#trackImage {
+    height: 200px;
+    width: auto;
+}
+
+#trackTitle {
+    font-size: 40px;
+}
+
+.buttons,
+.containerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+#play {
+    padding: 0px 20px;
+}
+
+#prev,
+#play,
+#next {
+    opacity: 0.7;
+    border: 0px;
+}
+
+#prev:hover,
+#play:hover,
+#next:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 10px;
+    width: 300px;
+    margin: 10px 20px;
+}
+
+.bar {
+    background-color: rgb(36, 6, 94);
+    border-radius: 5px;
+    height: 100%;
+}
+
+#timeBar {
+    width: 0%;
+}
+
+#volBar {
+    width: 100%;
+}

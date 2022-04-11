@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assessment - Music Player</title>
+    <!-- Load FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <section class="nowPlaying">
+        <div id="playngXOfY" class="nowPlayingItem"></div>
+        <img id="trackImage" class="nowPlayingItem" src="">
+        <div id="trackTitle" class="nowPlayingItem"></div>
+        <div id="trackArtist" class="nowPlayingItem"></div>
+    </section>
+
+    <section class="buttons">
+        <div id="prev">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div id="play">
+            <i class="fa fa-play-circle fa-4x"></i>
+        </div>
+        <div id="next">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+    </section>
+
+    <section class="containerAndBars">
+        <div class="containerRow">
+            <div id="timeCurrent">00:00</div>
+            <div id="timeContainer" class="container">
+                <div id="timeBar" class="bar">
+                </div>
+            </div>
+            <div id="timeTotal">00:00</div>
+        </div>
+
+        <div class="containerRow">
+            <i class="fa fa-volume-mute"></i>
+            <div id="volContainer" class="container">
+                <div id="volBar" class="bar">
+                </div>
+            </div>
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </section>
+
+    <audio id="currSong" src=""></audio>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
